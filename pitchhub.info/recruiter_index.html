@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+    <head>
+    <!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<meta charset="UTF-8">
+<style>
+.tab-pane{
+    border-left: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    padding: 0.8em;
+}
+
+.container1 {
+	border: thick solid #000;
+	width: 950px;
+	height:auto;
+	background-color: #FFF;
+}
+</style>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Welcome to PitchHub!</title>
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+		<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+    </head>
+    <body id="page">
+        <ul class="cb-slideshow">
+            <li><span>Image 01</span><div><h3>PITCH·HUB</h3></div></li>
+            <li><span>Image 02</span><div><h3>IS WHERE</h3></div></li>
+            <li><span>Image 03</span><div><h3>LEADERSHIP</h3></div></li>
+            <li><span>Image 04</span><div><h3>INNOVATION</h3></div></li>
+            <li><span>Image 05</span><div><h3>IDEAS</h3></div></li>
+            <li><span>Image 06</span><div><h3>COME TOGETHER</h3></div></li>
+        </ul>
+        <div class="container">
+            <!-- Codrops top bar -->
+            
+            
+             <br/>
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/pitchhub_logo.png"  height="25" width="25" alt="..." class="img-rounded" style =" margin-right: 40px" />PitchHub</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <form method="post" action="recruiterlogin.php" class="navbar-form navbar-left" role="search">
+              
+                <div class="form-group">
+                                 
+
+                        <input type="text" class="form-control" name = "companyid" placeholder="CompanyID">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name = "username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name = "password" placeholder="Password">
+                    </div>
+                    <!--do i need to change the type back to submit?  For now, button works-->
+                    <!--what does this do? onClick="parent.location='page.html'"-->
+                    <input type="submit" class="btn btn-default"  value = "Recruiter Log In"/>
+                    
+                                 <font size ="1px"> <small>  <a href="index.html">  Back to log in as job-seeker  </a> </small> </font>
+
+                    
+                </form>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+
+            
+                    <div class="container1">
+
+            <div class="col-md-5 col-md-offset-9">
+                <div>
+                
+                <div style="background-color:#FFF;  border-style: solid ;  border-width:10px; border-color:rgba(222, 0, 0, .2);-webkit-background-clip: padding-box;background-clip: padding-box;">
+                            <h1> <font size = "6"> <big> Sign Up </big>  </font> </h1>
+
+                <p> <font size = "2"> Pitch Hub is a place where job seekers can pitch themselves to recruiters. </font></p>
+                
+                    <p>  <font size = "2"> Signing up is easy! Just select if you are a job-seeker or recruiter. </font> </p>
+                    
+                    </div>
+                    
+                    
+ <div style="background-color:#FFF;  border-style: solid ;  border-width:10px; border-top-width:5px; border-color:rgba(255, 0, 0, .2);-webkit-background-clip: padding-box;background-clip: padding-box;">                   
+                    
+                    <ul class="nav nav-tabs" id="logintab">
+                        <li class="active" ><a href="#jobseeker" data-toggle="tab">Job-Seekers</a></li>
+                        <li><a href="#recruiter" data-toggle="tab">Recruiters</a></li>
+                    </ul>
+                </div>
+                
+                
+                
+                <div class="tab-content" style="background-color:#FFF;  border-style: solid ;  border-width:10px;border-top-width:5px; border-color:rgba(255, 0, 0, .2);-webkit-background-clip: padding-box;background-clip: padding-box;">
+                    <div class="tab-pane active" id="jobseeker">
+
+                        <div class="tab-content" style="background-color: white";>
+                            <!--Tab for jobseeker registration-->
+                            <form method="post" action="js_step1.php" enctype="multipart/form-data">
+                                <div class="tab-pane fade active in" id="jobseeker">
+                                    <p style="font-size: 20px; padding-top: 15px;">Sign up here if you are a job seeker</p>
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control" name = "firstname" id="jobSeekerFirstName" placeholder="First Name">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control" name = "lastname" id="jobSeekerLastName" placeholder="Last Name">
+                                    </div>
+
+                                    <div class="col-md-12" style="text-align:center">
+                                        <input type="submit" class="btn btn-primary" value = "Register"/>
+                                    </div>
+                                </div>
+                            </div>                  
+                        </form>
+
+
+
+                    </div>
+
+                    <div class="tab-pane" id="recruiter" style="text-align:center">
+                        <div class="tab-content" style="background-color: white";>
+                            <p style="font-size: 20px; padding-top: 10px; padding-left: 10px">Contact us here if you are a recruiter for more information</p>
+
+                            <div class="col-md-12" align: "center" style ="padding-bottom: 10px">  
+                                <button type="button" class="btn btn-primary", align: "center",  >Contact PitchHub team</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+       </div>
+     
+        </div>
+        
+            
+            <header>
+              
+            </header>
+        </div>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script language="javascript" type="text/javascript">
+$(function () {
+        $('#logintab a:first').tab('show')
+        });
+</script>
+<script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
